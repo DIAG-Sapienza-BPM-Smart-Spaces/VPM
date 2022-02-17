@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.habitmining</groupId>
+    <artifactId>GraphicViewerIntegrated</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
+    </properties>
+    
+    <build>        
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>   
+    </build>
+    
+    <repositories>
+        <repository>
+            <id>mvnrepository</id>
+            <url>https://mvnrepository.com/</url>
+        </repository>
+        
+        <repository>
+            <id>rapidminer</id>
+            <url>https://maven.rapidminer.com/content/groups/public/</url>
+        </repository>
+    </repositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.habitmining</groupId>
+            <artifactId>TrajectoryAnalyzerNB</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+             
+        <dependency>
+            <groupId>com.habitmining</groupId>
+            <artifactId>logconverter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+            
+        <dependency>
+            <groupId>com.habitmining</groupId>
+            <artifactId>NewGraphSimilarity</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>de.uni.freiburg.iig.telematik</groupId>
+            <artifactId>SEWOL</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        
+        <dependency>
+            <!--ProM-Framework.jar -->
+            <groupId>prom-framework</groupId>
+            <artifactId>prom-framework</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--ProM-Models.jar -->
+            <groupId>prom-models</groupId>
+            <artifactId>prom-models</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--ProM-Plugins.jar -->
+            <groupId>prom-plugins</groupId>
+            <artifactId>prom-plugins</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--Fuzzy.jar -->
+            <groupId>fuzzy</groupId>
+            <artifactId>fuzzy</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--rapidprom-4.0.0-signed.jar -->
+            <groupId>rapidprom-4</groupId>
+            <artifactId>rapidprom-4</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--Uitopia.jar -->
+            <groupId>uitopia-0</groupId>
+            <artifactId>uitopia-0</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--OpenXES-20181205.jar -->
+            <groupId>openxes</groupId>
+            <artifactId>openxes</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--InteractiveVisualization.jar -->
+            <groupId>interactivevisualization</groupId>
+            <artifactId>interactivevisualization</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--ProM-Contexts.jar -->
+            <groupId>prom-contexts</groupId>
+            <artifactId>prom-contexts</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--Log.jar -->
+            <groupId>log</groupId>
+            <artifactId>log</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--LogAbstractions.jar -->
+            <groupId>logabstractions</groupId>
+            <artifactId>logabstractions</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--LogDialog.jar -->
+            <groupId>logdialog</groupId>
+            <artifactId>logdialog</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--Widgets.jar -->
+            <groupId>widgets</groupId>
+            <artifactId>widgets</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--colt-1.2.0.jar -->
+            <groupId>colt</groupId>
+            <artifactId>colt</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--jgraph-5.13.0.4.jar -->
+            <groupId>jgraph</groupId>
+            <artifactId>jgraph</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--jung-algorithms-2.0.jar -->
+            <groupId>jung-algorithms</groupId>
+            <artifactId>jung-algorithms</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--jung-api-2.0.jar -->
+            <groupId>jung-api</groupId>
+            <artifactId>jung-api</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--jung-graph-impl-2.0.jar -->
+            <groupId>jung-graph-impl</groupId>
+            <artifactId>jung-graph-impl</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--jung-visualization-2.0.jar -->
+            <groupId>jung-visualization</groupId>
+            <artifactId>jung-visualization</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--slickerbox-1.0rc1.jar -->
+            <groupId>slickerbox</groupId>
+            <artifactId>slickerbox</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        <dependency>
+            <!--TableLayout-20050920.jar -->
+            <groupId>tablelayout</groupId>
+            <artifactId>tablelayout</artifactId>
+            <version>1.0-local</version>
+        </dependency>
+        
+        
+        
+        <!-- https://mvnrepository.com/artifact/com.bric/multislider -->
+        <dependency>
+            <groupId>com.bric</groupId>
+            <artifactId>multislider</artifactId>
+            <version>1.0</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.ning/compress-lzf -->
+        <dependency>
+            <groupId>com.ning</groupId>
+            <artifactId>compress-lzf</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/collections-generic/collections-generic -->
+        <dependency>
+            <groupId>collections-generic</groupId>
+            <artifactId>collections-generic</artifactId>
+            <version>4.01</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.11</version>
+        </dependency>
+
+        <!--https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.6-jre</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.11.3</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.util/java-merge-sort -->
+        <dependency>
+            <groupId>com.fasterxml.util</groupId>
+            <artifactId>java-merge-sort</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.googlecode.juniversalchardet/juniversalchardet -->
+        <dependency>
+            <groupId>com.googlecode.juniversalchardet</groupId>
+            <artifactId>juniversalchardet</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.univocity/univocity-parsers -->
+        <dependency>
+            <groupId>com.univocity</groupId>
+            <artifactId>univocity-parsers</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.rapidminer.studio</groupId>
+            <artifactId>rapidminer-studio-core</artifactId>
+            <version>7.1.0</version>
+            <type>jar</type>
+        </dependency>
+        
+    </dependencies>
+    
+</project>
